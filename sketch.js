@@ -17,7 +17,7 @@ function setup() {
 function draw() {
   background(0);  
 
-  if(wall.x - car.x < (car.width + wall.width)/2){
+  if(wall.isTouching(car){
       car.velocityX = 0;
 
     var deformation = (0.5 * wieght * speed * speed)/22500;
